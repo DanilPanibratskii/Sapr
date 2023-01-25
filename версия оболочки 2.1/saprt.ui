@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(255, 255, 255, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_const">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>45</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(104, 104, 104, 250);
+color: rgb(1, 1, 1);
+border-radius: 10px;
+border: none</string>
+    </property>
+    <property name="text">
+     <string>КОНСТРУКТОРСКИЙ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_topology">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>130</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(124, 124,124, 250);
+color: rgb(1, 1, 1);
+border-radius: 10px;
+border: none</string>
+    </property>
+    <property name="text">
+     <string>ТОПОЛОГИЯ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_program">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>215</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(144, 144, 144, 250);
+color: rgb(1, 1, 1);
+border-radius: 10px;
+border: none</string>
+    </property>
+    <property name="text">
+     <string>ПРОГРАММИРОВАНИЕ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_manager">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>650</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(1, 1, 1);</string>
+    </property>
+    <property name="text">
+     <string>manager</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name_project">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>600</y>
+      <width>1001</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(39, 89, 80, 0);
+color: rgb(1, 1, 1);</string>
+    </property>
+    <property name="text">
+     <string>        Проект 868 «Создание концепции и пилотного образца комплексной системы автоматизированного проектирования (САПР) микроэлектронных и микромодульных устройств с использованием технологий цифровых двойников»</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>45</y>
+      <width>965</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(166, 166, 166, 1);
+border-radius: 10px;
+border: none</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(104, 104, 104, 250);
+border-radius: 10px;
+border: none</string>
+     </property>
+     <widget class="QLabel" name="wall_background_freecad_const">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>800</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(217, 217, 217, 200);
+color: rgb(255, 255, 255);
+border-radius: 10px;
+border: none</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_samba_freecad_const">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>60</y>
+        <width>200</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 200);
+color: rgb(1, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>ОБЩИЕ ФАЙЛЫ</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_open_freecad_const">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>120</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(217, 217, 217, 255);
+color: rgb(1, 1, 1);
+border-radius: 60px;</string>
+      </property>
+      <property name="text">
+       <string>FREECAD</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_files_freecad_const">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>60</y>
+        <width>150</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 200);
+color: rgb(1, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>ФАЙЛЫ</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(124, 124,124, 250);
+border-radius: 10px;
+border: none</string>
+     </property>
+     <widget class="QPushButton" name="btn_files_kicad_topology">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>60</y>
+        <width>150</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 200);
+color: rgb(1, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>ФАЙЛЫ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="wall_background_kicad_topology">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>800</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(217, 217, 217, 200);
+color: rgb(255, 255, 255);
+border-radius: 10px;
+border: none</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_open_kicad_topology">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>120</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(217, 217, 217, 255);
+color: rgb(1, 1, 1);
+border-radius: 60px;</string>
+      </property>
+      <property name="text">
+       <string>KICAD</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_samba_kicad_topology">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>60</y>
+        <width>200</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 200);
+color: rgb(1, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>ОБЩИЕ ФАЙЛЫ</string>
+      </property>
+     </widget>
+     <zorder>wall_background_kicad_topology</zorder>
+     <zorder>btn_files_kicad_topology</zorder>
+     <zorder>btn_open_kicad_topology</zorder>
+     <zorder>btn_samba_kicad_topology</zorder>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(144, 144, 144, 250);
+border-radius: 10px;
+border: none</string>
+     </property>
+     <widget class="QLabel" name="wall_background_cube_prog">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>800</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(217, 217, 217, 200);
+color: rgb(255, 255, 255);
+border-radius: 10px;
+border: none</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_samba_cube_prog">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>60</y>
+        <width>200</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 200);
+color: rgb(1, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>ОБЩИЕ ФАЙЛЫ</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_files_cube_prog">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>60</y>
+        <width>150</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 200);
+color: rgb(1, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>ФАЙЛЫ</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_open_cube_prog">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>120</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sitka</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(217, 217, 217, 255);
+color: rgb(1, 1, 1);
+border-radius: 60px;</string>
+      </property>
+      <property name="text">
+       <string>CUBE</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_back">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>650</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(217, 217, 217, 255);
+color: rgb(1, 1, 1);
+border-radius: 30px;</string>
+    </property>
+    <property name="text">
+     <string>back</string>
+    </property>
+   </widget>
+   <zorder>stackedWidget</zorder>
+   <zorder>btn_const</zorder>
+   <zorder>btn_topology</zorder>
+   <zorder>btn_program</zorder>
+   <zorder>text_manager</zorder>
+   <zorder>name_project</zorder>
+   <zorder>btn_back</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../../Downloads/kisspng-tattoo-integrated-circuits-chips-electronic-circ-registration-eurosoi-ulis-2-17-5c6a9fece983a9.1020598415504916289565.qrc"/>
+ </resources>
+ <connections/>
+</ui>
